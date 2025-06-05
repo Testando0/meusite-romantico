@@ -269,3 +269,48 @@ button#prev, button#next {
 .botao-quiz:hover {
   background-color: #e60073;
 }
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    border-radius: 30px;
+    padding: 20px;
+  }
+
+  #clip {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carta {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .slides-container {
+    height: auto; /* remove altura fixa */
+  }
+
+  .slide img, .slide video {
+    height: auto;
+    max-height: 300px; /* ajustável conforme necessidade */
+  }
+
+  .legenda {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  button, #btnCartinha, #btnTocar {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  .botao-quiz {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
