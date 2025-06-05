@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Sobre a Gente</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff0f5;
+      color: #660033;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .quiz-container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #ff99cc;
+      max-width: 550px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+    }
+
+    h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2rem;
+      color: #cc0066;
+      margin-bottom: 25px;
+    }
+
+    .question {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    .options button {
+      background: #ff4d88;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin: 8px 6px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 1.05rem;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .options button:hover {
+      background: #e60073;
+      transform: scale(1.05);
+    }
+
+    #result {
+      margin-top: 30px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #cc0066;
+    }
+
+    #btn-voltar {
+      display: none;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff66a3;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    #btn-voltar:hover {
+      background-color: #e60073;
+    }
+
+    .heart {
+    position: fixed;
+    top: -20px;
+    font-size: 24px;
+    animation: fall linear forwards;
+    z-index: 999;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h2>Quiz Sobre a Gente 💕</h2>
+    <div id="quiz"></div>
+    <div id="result"></div>
+    <button id="btn-voltar" onclick="window.location.href='index.html'">⬅️ Voltar para a Página Inicial</button>
+  </div>
+
+  <script>
+    const quizData = [
+      {
+        question: "🍽️ Qual é minha comida favorita?",
+        options: ["Frango", "Pizza", "Pudim", "Macarronada"],
+        correct: 1
+      },
+      {
+        question: "📍 Onde foi nosso primeiro encontro?",
+        options: ["No parque", "No shopping", "No Veneza", "No cinema"],
+        correct: 3
+      },
+      {
+        question: "🎵 Qual música marcou a gente?",
+        options: ["FORROZINHO WADEWEL", "PEDRO SAMPAIO - PERVERSA", "Josué Bom de Faixa - Não Precisa Negar", "Seu Jorge - Mina do Condomínio"],
+        correct: 0
+      },
+      {
+        question: "🧸 Qual apelido carinhoso ela te chama?",
+        options: ["Meu Veio", "Meu Mucilom", "Meu Anjo", "Meu Príncipe"],
+        correct: 1
+      },
+      {
+        question: "🗓️ Qual foi o dia do primeiro encontro?",
+        options: ["12 de Novembro", "15 de Setembro", "2 de Dezembro", "15 de Novembro"],
+        correct: 0
+      },
+      {
+        question: "💋 Quando foi nosso primeiro beijo?",
+        options: ["3 de Outubro", "15 de Setembro", "20 de Outubro", "27 de Agosto"],
+        correct: 1
+      },
+      {
+        question: "🎁 Qual foi o primeiro dia que eu te dei um presente?",
+        options: ["20 de Dezembro", "7 de Setembro", "29 de Novembro", "17 de Outubro"],
+        correct: 2
+      },
+      {
+        question: "⚽ Qual o dia da nossa primeira Copa do mundo juntos?",
+        options: ["2 de Dezembro", "9 de Dezembro", "5 de Dezembro", "4 de Dezembro"],
+        correct: 0
+      }
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+
+    const quizEl = document.getElementById('quiz');
+    const resultEl = document.getElementById('result');
+    const btnVoltar = document.getElementById('btn-voltar');
+
+    function loadQuestion() {
+      const q = quizData[currentQuestion];
+      quizEl.innerHTML = `
+        <div class="question">${q.question}</div>
+        <div class="options">
+          ${q.options.map((opt, i) => `<button onclick="selectAnswer(${i})">❤️ ${opt}</button>`).join('')}
+        </div>
+      `;
+    }
+
+    function selectAnswer(selected) {
+      if (selected === quizData[currentQuestion].correct) {
+        score++;
+      }
+      currentQuestion++;
+      if (currentQuestion < quizData.length) {
+        loadQuestion();
+      } else {
+        showResult();
+      }
+    }
+
+    function showResult() {
+      quizEl.style.display = 'none';
+      resultEl.innerHTML = `<p>Você acertou ${score} de ${quizData.length} perguntas! ❤️</p>`;
+      btnVoltar.style.display = 'inline-block';
+    }
+
+    // Inicia o quiz
+    loadQuestion();
+  </script>
+   <script src="hearts.js"></script>
+</body>
+</html>

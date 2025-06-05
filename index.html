@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para você, Meu Amor 💖</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body> <!-- Começo do Site -->
+    <div class="container">
+        <h1>Oi, Meu Amor!</h1>
+        <p>Este Site é só para te lembrar o quanto eu <strong>TE AMO</strong>, e o quanto você é especial para mim. ❤️</p>
+        
+        <p id="contador">Estamos juntos há <span id="dias"></span> dias!</p>
+        
+        <button onclick="mostrarMensagem()">Clique aqui!</button>
+        <p id="mensagem"></p>
+        
+    </div>
+
+     <!-- Carta feita a mão -->
+    <div class="carta">
+  <h2>Minha Princesa,</h2>
+  <p>
+    Cada momento contigo é um tesouro que guardo com carinho no coração. 
+    Te amo mais do que palavras podem expressar.
+  </p>
+  <p>
+    Sua cartinha chegou finalmente né? KKKKKK
+    ai amor quase 3 anos juntos já, lembro do tempo que
+    a gente estava se conhecendo, tudo por conta
+    de um maçarico você salvou meu número e começamos a conversar,
+    apresentou perfeitamente naquela abertura e você ficou com medo do botar no fogo
+    alto kk eu lembro, nosso piseiro ficou pra história, infelizmente nínguem tinha gravado.<br> <br>
+    
+    Você começou a perceber que estava gostando de mim e a me olhar diferente,
+    lembro do que você comentou numa postagem minha "que mágoa estou ficando triste
+    pois vou sair da escola, ja chorei litros, você foi o menino que eu mais me 
+    aproximei, você é muito especial pra mim viu😢💛", isso me deixou muito feliz
+    e você nem imaginava.<br><br>
+    
+    29 de agosto de 2022, 21:38 você me disse "Eu não posso chegar e negar que 
+    é algo que eu sinto", primeira vez que você disse q estava com sentimentos por mim
+    ainda me fiz de besta pra fazer você falar kkkkk. É amor a gente passou por tanta coisa
+    depois disso, tanto ruins quanto boas, mas Deus deu forças a gente pra segir em frente
+    porque era algo que os dois queriam. A gente bateu o pé e disse que iria contra tudo
+    e sim a gente se amava, agora estamos aqui nesse dia maravilhoso <strong>DIA DOS NAMORADOS</strong>
+    mais uma vez parar comemorar e é claro quase nossos 3 anos de namoro.<br> <br>
+    
+    Quero conquistar tudo junto com você, vamos conseguir realizar nossos sonhos. Você
+    vai se tornar uma grande farmacêutica e claro quero ficar ao seu lado para ver sua graduação,
+    e tudo que puder ajudar estarei sempre aqui. Amor a gente vai conseguir conquistar tudo em nome de Jesus, Deus
+    vai guiar a gente sempre pro melhor.<br><br>
+
+    Sabe, às vezes eu fico aqui pensando em tudo que a gente já passou e não é pouca coisa, né? e só consigo agradecer 
+    por ter você comigo. Você me inspira demais, é minha alegria diária, e não tem um dia que eu não sorria só de lembrar de você.
+    Claro que rolaram uns perrengues no caminho, mas foi isso que fez a gente crescer junto e ficar ainda mais firme. Não tem nada que 
+    possa separar a gente porque o que a gente tem é verdadeiro demais.
+    Quando você estiver pra baixo, pode contar comigo pra te dar aquele abraço apertado, aquela estraladinha nas costas de veia,
+    secar suas lágrimas e comemorar cada vitória. Nossa história tá só começando, e eu tô animado demais pra 
+    viver cada capítulo do nosso livro, sempre com muito amor, zoeira, e aquele jeitinho que só a gente tem.
+    <strong>OBRIGADO</strong> por ser essa pessoa incrível, por me aceitar do jeitinho que sou (até meus defeitos chatos 😅), 
+    e por me fazer querer ser melhor todo dia. Você é meu porto seguro, minha princesa, e eu só quero continuar construindo
+    um futuro lindo contigo.<br><br>
+
+    Te amo hoje, amanhã, e por toda a eternidade e nem precisa marcar no calendário, porque amor assim é pra sempre mesmo.
+    
+  </p>
+  <p>
+    Assinado,<br>
+    Seu Mucilom
+  </p>
+    <a href="quiz.html" class="botao-quiz">💖 Responder Quiz Sobre a Gente</a>
+</div>
+    
+
+        <!-- Clip do Site -->
+        <audio id="musica" loop>
+            <source src="audio/musica.mp3" type="audio/mp3">
+            Seu navegador não suporta áudio.
+        </audio>
+        <video id="clip" width="320" height="240" style="display:none;" loop >
+            <source src="video/clip.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeo.
+        </video>
+            <!-- Botão de Tocar a música -->
+        <button id="btnTocar">Tocar Música▶️</button>
+
+                <!-- Sistema de Cartinhas -->
+
+          <section class="cartinhas">
+            <h2>💌 Cartinhas de Amor 💌</h2>
+            <p id="cartinhas">Clique no botão para ler uma mensagem especial!</p>
+            <button id="btnCartinha">Ver Cartinha 💖</button>
+        </section>
+
+            <!-- Carrossel de Fotos/Vídeos -->
+
+        <section class="carrossel">
+            <h2>❤️ Momentos Especiais ❤️</h2>
+            <div class="slides-container">
+                <div class = "slide active">
+                    <img src="imagens/foto1.jpg" alt="FOTO NOSSA 1">
+                </div>
+                <div class = "slide">
+                    <img src="imagens/foto2.jpg" alt="FOTO NOSSA 2">   
+                </div>
+                <div class = "slide">
+                    <img src="imagens/foto3.jpg" alt="FOTO NOSSA 3">          
+                </div>
+                <div class = "slide">
+                    <img src="imagens/foto4.jpg" alt="FOTO NOSSA 4">
+                </div>
+            </div>
+            <div id="legenda" class="legenda"></div>
+
+            <button id="prev">&#10094; Anterior</button>
+            <button id="next">Próximo &#10095;</button>
+        </section>
+
+        
+
+        
+
+    <script src="script.js"></script>
+    <script src="hearts.js"></script>
+</body>
+</html>
