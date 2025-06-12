@@ -1,7 +1,7 @@
 //Mensagem que aparece ao clicar no botão
 
 function mostrarMensagem() {
-    document.getElementById("mensagem").innerText = "Você é a melhor parte da minha vida. Te Amo Muito! 💘"
+    document.getElementById("mensagem").innerText = "Ei, amor... Se você chegou até aqui, é porque o meu coração quis te lembrar de uma coisa: Você é muito importante pra mim. Eu criei esse cantinho com carinho, só pra te mostrar em cada detalhe o quanto você é especial pra mim. Já são quase 3 anos ao seu lado… e mesmo assim, ainda me pego sorrindo do nada só de lembrar que tenho você. Obrigado por existir, por me amar, por ser exatamente quem você é. Esse site é só um pedacinho do que meu coração sente por você. 💘"
 }
 
 //Contador de dias juntos
@@ -38,7 +38,22 @@ const mensagens = [
     "Seu sorriso ilumina até os meus dias mais nublados. ☀️",
     "Com você, eu quero construir todos os meus sonhos. 🏠💍",
     "Você é a razão de cada batida do meu coração. 💓",
-    "Estar contigo é viver no melhor lugar do mundo. 🌎✨"
+    "Estar contigo é viver no melhor lugar do mundo. 🌎✨",
+    "Você é meu lar sempre. 🏡",
+    "Te amo mais que ontem. ❤️",
+    "Meu coração é todo seu. 💘",
+    "Com você, tudo faz sentido. ✨",
+    "Seu sorriso é meu refúgio. 😊",
+    "Nosso amor é infinito, sabia? ♾️",
+    "Só quero você pra sempre. 💑",
+    "Amar você é tão fácil. 💕",
+    "Você é minha melhor parte. 🧩",
+    "Contigo, a vida é leve. 🌷",
+    "Seu beijo é meu vício. 😘",
+    "Obrigado por me escolher sempre. 🌟",
+    "Você me completa de verdade. 🥰",
+    "Juntos somos perfeitos demais, né? 😍",
+    "Te amo sem explicação possível. 💖"
 ];
 
 document.getElementById("btnCartinha").addEventListener("click", () => {
@@ -66,10 +81,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const legenda = document.getElementById("legenda");
 
     const legendas = [
-        "Nosso primeiro casamento juntos ❤️",
+        "O momento e a emoção que nunca vamos esquecer!💛",
         "O momento em que sorri no teu olhar 😍",
         "Aquele passeio que ficou no coração 💖",
-        "Eu fico perdido na sua beleza 🌹"
+        "Nosso primeiro casamento juntos ❤️",
+        "Eu fico perdido na sua beleza 🌹",
+        "Te amo em cada cachinho seu 🫶",
+        "Nosso amor é leve 🤍🌙",
+        "Meu crush de todos os dias 😍📆",
+        "Casalzão da p*rra 😎🔥"
         
     ];
 
