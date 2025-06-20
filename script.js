@@ -5,7 +5,7 @@ function mostrarMensagem() {
 }
 
 //Contador de dias juntos
-const dataInicio = new Date("2022-12-20"); //Nossa data de Namoro
+const dataInicio = new Date("2025-06-16"); //Nossa data de Namoro
 const hoje = new Date();
 const diff = hoje - dataInicio;
 const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -32,28 +32,27 @@ btnTocar.addEventListener("click", () => {
 
 //Cartinhas
 const mensagens = [
-     "Você é meu amor eterno, minha luz e minha paz! 💕",
-    "Cada momento ao seu lado é um presente precioso. 🎁",
-    "Te amar é a melhor coisa que já me aconteceu! ❤️",
-    "Seu sorriso ilumina até os meus dias mais nublados. ☀️",
-    "Com você, eu quero construir todos os meus sonhos. 🏠💍",
-    "Você é a razão de cada batida do meu coração. 💓",
-    "Estar contigo é viver no melhor lugar do mundo. 🌎✨",
-    "Você é meu lar sempre. 🏡",
-    "Te amo mais que ontem. ❤️",
-    "Meu coração é todo seu. 💘",
-    "Com você, tudo faz sentido. ✨",
-    "Seu sorriso é meu refúgio. 😊",
-    "Nosso amor é infinito, sabia? ♾️",
-    "Só quero você pra sempre. 💑",
-    "Amar você é tão fácil. 💕",
-    "Você é minha melhor parte. 🧩",
-    "Contigo, a vida é leve. 🌷",
-    "Seu beijo é meu vício. 😘",
-    "Obrigado por me escolher sempre. 🌟",
-    "Você me completa de verdade. 🥰",
-    "Juntos somos perfeitos demais, né? 😍",
-    "Te amo sem explicação possível. 💖"
+     "Você É Meu Amor Eterno, Minha Luz E Minha Paz! 💕",
+    "Cada Momento Com Você É Um Presente Precioso. 🎁",
+    "Te Amar É A Melhor Coisa Que Já Me Aconteceu! ❤️",
+    "Seu Sorriso Ilumina Até Os Meus Dias Mais Nublados. ☀️",
+    "Com Você, Eu Quero Construir Todos Os Meus Sonhos. 🏠💍",
+    "Você É A Razão De Cada Batida Do Meu Coração. 💓",
+    "Estar Contigo É Viver No Melhor Lugar Do Mundo. 🌎✨",
+    "Você É Meu Lar Sempre. 🏡",
+    "Te Amo Mais Que Ontem. ❤️",
+    "Meu Coração É Todo Seu. 💘",
+    "Com Você, Tudo Faz Sentido. ✨",
+    "Seu Sorriso É Meu Refúgio. 😊",
+    "Nosso Amor É Infinito, Sabia? ♾️",
+    "Só Quero Você Para Sempre. 💑",
+    "Amar Você É Tão Fácil. 💕",
+    "Você É Minha Melhor Parte. 🧩",
+    "Contigo, A Vida É Leve. 🌷",
+    "Obrigado Por Me Escolher Sempre. 🌟",
+    "Você Me Completa De Verdade. 🥰",
+    "Juntos Somos Perfeitos Demais, Né? 😍",
+    "Te Amo Sem Explicação Possível. 💖"
 ];
 
 document.getElementById("btnCartinha").addEventListener("click", () => {
@@ -81,15 +80,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const legenda = document.getElementById("legenda");
 
     const legendas = [
-        "O momento e a emoção que nunca vamos esquecer!💛",
-        "O momento em que sorri no teu olhar 😍",
-        "Aquele passeio que ficou no coração 💖",
-        "Nosso primeiro casamento juntos ❤️",
-        "Eu fico perdido na sua beleza 🌹",
-        "Te amo em cada cachinho seu 🫶",
-        "Nosso amor é leve 🤍🌙",
-        "Meu crush de todos os dias 😍📆",
-        "Casalzão da p*rra 😎🔥"
+        "O Momento É A Emoção Que Nunca Vamos Esquecer!💛",
+        "O Momento Em Que Sorri No Teu Olhar 😍",
+        "Aquele Momento Que Ficou No Coração 💖",
+        "Nosso Primeiro Momento Juntos ❤️",
+        "Eu Fico Perdido Na Sua Beleza 🌹",
+        "Te Amo Em Cada Detalhezinho Seu 🫶",
+        "Nosso Amor É Leve 🤍🌙",
+        "Meu Crush De Todos Os Dias 😍📆",
+        "Casalzão Da P*rra 😎🔥"
         
     ];
 
@@ -129,7 +128,7 @@ const voltarBtn = document.getElementById('btn-voltar');
 function showResult() {
   quizEl.style.display = 'none';
   resultEl.innerHTML = `
-    <p>Você acertou ${score} de ${quizData.length} perguntas! ❤️</p>
+    <p>Você Acertou ${score} De ${quizData.length} Perguntas! ❤️</p>
   `;
   voltarBtn.style.display = 'inline-block';
 }
