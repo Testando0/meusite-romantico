@@ -1,7 +1,7 @@
 //Mensagem que aparece ao clicar no botão
 
 function mostrarMensagem() {
-    document.getElementById("mensagem").innerText = "Ei, amor... Se você chegou até aqui, é porque o meu coração quis te lembrar de uma coisa: Você é muito importante pra mim. Eu criei esse cantinho com carinho, só pra te mostrar em cada detalhe o quanto você é especial pra mim. Já são quase 3 anos ao seu lado… e mesmo assim, ainda me pego sorrindo do nada só de lembrar que tenho você. Obrigado por existir, por me amar, por ser exatamente quem você é. Esse site é só um pedacinho do que meu coração sente por você. 💘"
+    document.getElementById("mensagem").innerText = "Ei, Amor... Se Você Chegou Até Aqui, É Porque O Meu Coração Quis Te Lembrar De Uma Coisa: Você É Muito Importante Para Mim. Eu Fiz Esse Cantinho Com Carinho, Só Para Te Mostrar Em Cada Detalhe O Quanto Você É Especial Para Mim. 💘"
 }
 
 //Contador de dias juntos
