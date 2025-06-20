@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quiz Sobre a Gente</title>
+  <title>Quiz Do Conhecimento</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -100,53 +100,48 @@
 </head>
 <body>
   <div class="quiz-container">
-    <h2>Quiz Sobre a Gente 💕</h2>
+    <h2>Quiz Do Conhecimento 💕</h2>
     <div id="quiz"></div>
     <div id="result"></div>
-    <button id="btn-voltar" onclick="window.location.href='index.html'">⬅️ Voltar para a Página Inicial</button>
+    <button id="btn-voltar" onclick="window.location.href='index.html'">⬅️ Voltar Para A Página Inicial</button>
   </div>
 
   <script>
     const quizData = [
       {
-        question: "🍽️ Qual é minha comida favorita?",
-        options: ["Frango", "Pizza", "Pudim", "Macarronada"],
-        correct: 1
-      },
-      {
-        question: "📍 Onde foi nosso primeiro encontro?",
-        options: ["No parque", "No shopping", "No Veneza", "No cinema"],
+        question: "🍽️ Qual É Minha Comida Favorita?",
+        options: ["Frango", "Pizza", "Sopa", "Macarronada"],
         correct: 3
       },
       {
-        question: "🎵 Qual música marcou a gente?",
-        options: ["FORROZINHO WADEWEL", "PEDRO SAMPAIO - PERVERSA", "Josué Bom de Faixa - Não Precisa Negar", "Seu Jorge - Mina do Condomínio"],
-        correct: 0
-      },
-      {
-        question: "🧸 Qual apelido carinhoso ela te chama?",
-        options: ["Meu Veio", "Meu Mucilom", "Meu Anjo", "Meu Príncipe"],
+        question: "🎤 Qual Minha Cantora Preferida?",
+        options: ["Marília Mendonça", "Marília Tavares", "Adele", "Olivia Rodigo"],
         correct: 1
       },
       {
-        question: "🗓️ Qual foi o dia do primeiro encontro?",
-        options: ["12 de Novembro", "15 de Setembro", "2 de Dezembro", "15 de Novembro"],
-        correct: 0
-      },
-      {
-        question: "💋 Quando foi nosso primeiro beijo?",
-        options: ["3 de Outubro", "15 de Setembro", "20 de Outubro", "27 de Agosto"],
-        correct: 1
-      },
-      {
-        question: "🎁 Qual foi o primeiro dia que eu te dei um presente?",
-        options: ["20 de Dezembro", "7 de Setembro", "29 de Novembro", "17 de Outubro"],
+        question: "🎵 Qual Minha Música Preferida?",
+        options: ["Traitor", "Happier", "Me Ame Mais", "Tentativas"],
         correct: 2
       },
       {
-        question: "⚽ Qual o dia da nossa primeira Copa do mundo juntos?",
-        options: ["2 de Dezembro", "9 de Dezembro", "5 de Dezembro", "4 de Dezembro"],
-        correct: 0
+        question: "🦜 Qual O Nome Do Meu Pet?",
+        options: ["Joseph", "Jhon", "Lena", "Jack"],
+        correct: 2
+      },
+      {
+        question: "🗓️ Quando É Meu Aniversário?",
+        options: ["12 De Novembro", "15 De Setembro", "10 De Fevereiro", "15 De Novembro"],
+        correct: 3
+      },
+      {
+        question: "🤗 Qual Minha Estação Do Ano Preferida?",
+        options: ["Inverno", "Verão", "Primavera", "Outono"],
+        correct: 1
+      },
+      {
+        question: "🙄 Qual Minha Cor Preferida?",
+        options: ["Preto", "Vermelho", "Azul", "Roxo"],
+        correct: 2
       }
     ];
 
@@ -181,7 +176,7 @@
 
     function showResult() {
       quizEl.style.display = 'none';
-      resultEl.innerHTML = `<p>Você acertou ${score} de ${quizData.length} perguntas! ❤️</p>`;
+      resultEl.innerHTML = `<p>Você Acertou ${score} De ${quizData.length} Perguntas! ❤️</p>`;
       btnVoltar.style.display = 'inline-block';
     }
 
